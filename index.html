@@ -1,12 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tailwind css</title>
+    <Link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
 </head>
+
 <body>
-   
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="bg-green-950 fixed top-0 left-0 w-full xl:w-1/2 xl:left-[20%] z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20 ">
+            <div class="font-EuphoriaScriptRegular sm:text-2xl">
+                IndorePlants.
+            </div>
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80
+            backdrop-blur-sm flex itema-center justify-center duration-300 overflow-hidden
+            lg:static lg:min-h-fit lg:w-auto lg:bg-transparent">
+                <ul class="flex flex-col text-center items-center justify-center gap-8
+                lg:flex-row">
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#popular" class="nav-link">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+
+                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="./assets/img/leaf-1.png"  class="w-32" alt="leaf1">
+                </div>
+
+                <div class="absolute -top-0 -left-5 rotate-90 opacity-90 lg:hidden">
+                    <img src="./assets/img/leaf-2.png"  class="w-32" alt="leaf1">
+                </div>
+
+            </div>
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-3-line" id="humburger"></i>
+            </div>
+        </nav>
+    </header>
 </body>
+<script src="./main.js"></script>
 </html>
